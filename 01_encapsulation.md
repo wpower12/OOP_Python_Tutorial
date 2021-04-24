@@ -105,8 +105,8 @@ I\'m dead!
 ```
 
 ## Overview
-These examples barely scratch the surface of the concept of encapsulation, but they should provide a good starting point for the rest of this content. Hopefully it's now easier to see how Objects can be used to create useful, manageable abstractions of a large variety of things. 
+These examples barely scratch the surface of the concept of encapsulation, but they should provide a good starting point for the rest of this content. Hopefully it's now easy to see how Objects can be used to create useful, manageable abstractions of a large variety of things. 
 
-As an initial exercise, consider some more methods you might want to add onto the Character class. Perhaps some that have different outputs based on the class of the character. 
+As an initial exercise, consider some more methods you could add onto the Character class. Perhaps some that have different outputs based on the class of the character. 
 
-Additionally, there are more concrete exercises provided in the  '/exercises/02_encapsulation' directory. 
+Additionally, there are more concrete exercises provided in the  '/exercises/01_encapsulation' directory. 

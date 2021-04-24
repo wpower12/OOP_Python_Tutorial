@@ -22,4 +22,4 @@ The top level directory contains markdown files with discussion content. Any exe
 I'll be writing these discussion documents assuming you have a terminal open to the directory, and can navigate to the relvant directores for each topic. Some discussions will reference example code that can be imported into the python REPL so you can 'play along' with the code examples. To make imports easier, start your REPL in the same scope as a the example code. I'll write the example code assuming thats where you started. 
 
 ## Next!
-02_Encapsulation
+01_Encapsulation.md
