@@ -6,7 +6,7 @@ Lets start with some examples. Consider the humble light switch. We can easily t
 
 To use the langauge of OOP; "when we make an object, we can make assumptions about its state, based on how we defined the object". 
 
-## Classes and Class Basics
+## Class Basics
 Before we continue with the definition of encapsulation, it might be useful to see how we use the paradigm of Object Oriented Programming in or with a specific programming language.  Different programming langauges have different techniques to manage the 'bookkeeping' of objects. That is, what methods and procedures do we use to create objects and interact with them? 
 
 Many languages use the notion of a 'class' to represent an Object. So many, that it is easy to simply use the terms Object and Class interchangeably. I'll be pedantic and try to keep the separation between the abstract notion of an Object, and the specific implementation of them; Classes. 
@@ -61,7 +61,7 @@ I am off!
 I am on!
 ```
 
-## Class Components
+## Fields, Methods, Constructors
 In our lightswitch example, we can see that there are roughly two 'kinds' of things that make up a class. We have a set of variables (the am_i_on variable for instance) specific to the object, and we have functions that operate on these. In OOP parlance, we refer to these as fields and methods. 
 
 Fields are the variables that hold a class' state. You might be wondering; 'how does an object get an initial state?'. We can see one way in the light switch example; simply assinging a value to field in the class definition. However, we might want to specify some inital state when we create (aka 'instantiate') an object. 
@@ -104,7 +104,7 @@ I am Bob, a Mage
 I\'m dead!
 ```
 
-## Overview
+## Review
 These examples barely scratch the surface of the concept of encapsulation, but they should provide a good starting point for the rest of this content. Hopefully it's now easy to see how Objects can be used to create useful, manageable abstractions of a large variety of things. 
 
 As an initial exercise, consider some more methods you could add onto the Character class. Perhaps some that have different outputs based on the class of the character. 
