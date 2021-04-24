@@ -105,7 +105,9 @@ I\'m dead!
 ```
 
 ## Review
-These examples barely scratch the surface of the concept of encapsulation, but they should provide a good starting point for the rest of this content. Hopefully it's now easy to see how Objects can be used to create useful, manageable abstractions of a large variety of things. 
+These examples should provide a concrete illustration of how we use object oriented programming to Encapsulate the abstraction of an Object into a class. This framework allows us to create working, manageable programming constructs that can represent a incredibly wide variety of things. 
+
+Many frameworks that you will use to interact with complex systems will be cast in an Object Oriented light. Consider the task of GUI programming. When making a Graphic User Interface, we have objects that represent the screen itself, objects that represent buttons and text fields, and so on. 
 
 As an initial exercise, consider some more methods you could add onto the Character class. Perhaps some that have different outputs based on the class of the character. 
 
