@@ -4,15 +4,16 @@ This is a short(?) tutorial on the topic of Object Oriented Programming; what it
 ## Goals of OOP
 When we program, our task is to translate some real problem in the world to the language of a computer, such that we find a solution to said problem. In the service of this, we create a file, or usually many files. These are organized in a way that their contents and logical abstractions can be shared and used between eachother. Programming is largely about managing this mass of possibly-pasta-like complexity.
 
-To help us manage this complexity, a variety of paradigms and frameworks have been developed to help us make choices about how to organize code while solving problems. Object Oriented Programming is one such paradigm. It attempts to help wrangle the complexity beast by considering code as a collection of Objects that represent abstractions of the parts, or the whole, of the problem at hand. These objects can interact with each other, behaving as 'clients' of each others code. 
+To help us manage this complexity, a variety of paradigms and frameworks have been developed to help us make choices about how to organize code while solving problems. Object Oriented Programming is one such paradigm. It attempts to help wrangle the complexity beast by considering code as a collection of Objects that represent abstractions of the parts, or the whole, of the problem at hand. These Objects can interact with each other, behaving as 'clients' of each others code. 
 
-By following the guidelines of OOP, that is, by ensuring some goals are met when we create Objects, we gain a non-trivial assurance that we will have some structure that will help us organize code, extend existing code, hunt down bugs easier, etc. 
+The core idea is that we can define a Class, representing an Object in the abstract, that contains data and methods to operate on that data. 
 
-The goals or components of OOP can be split into three main topics;
+There are many components to OOP, and different languages will provide built-in help for a variety of subsets of the full world of OOP features and concepts. To keep it simple, I'll focus on a few core ideas. I think these represent a minimal set to begin using OOP concepts 'in the wild', that is to interact with frameworks and organize personal projects. 
 
-* Encapsulation - How we organize an Object representing a single abstraction.
-* Inheritance - How we create a set of Objects representing a hierarchy of abstraction.
-* Polymorphism - How we ensure or know when one member of a set of Objects can be used like it is another member of that set. 
+The main concepts I'll be focusing on will be;
+
+* Encapsulation - How we organize a Class representing a single abstraction.
+* Inheritance/Polymorphism - How we organize a hierarchy of abstractions, and how and when we can use one Class as if it were another. 
 
 This tutorial will attmept to work through these topics, presenting discussion and exercises along the way. 
 

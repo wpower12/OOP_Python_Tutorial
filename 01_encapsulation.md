@@ -1,17 +1,15 @@
 # Encapsulation
-To help us talk about this topic more clearly, I'd like to begin by explicitly defining a term; State. You may have already seen this word used as part of a definition of an Object or Class. We use Objects to help us manage the state of some thing. 
+To help us talk about this topic more clearly, I'd like to begin by explicitly defining a term; State. You may have already seen this word used as part of a definition of a Class. We use Classes and Objects (instances of Classes) to help us manage the state of some thing. 
 
 ## State
 Lets start with some examples. Consider the humble light switch. We can easily talk about its state, and it seems trivial to enumerate the possible states. A lightswitch can be on, or it can be off. When we talk about a specific lightswith, that is, one we've bought, purchased, and connected to an existing electrical circuit, we can say then (usually) say which of these two states the lightswitch must be 'In'. 
 
-To use the langauge of OOP; "when we make an object, we can make assumptions about its state, based on how we defined the object". 
+To use the langauge of OOP; "when we make an object, we can make assumptions about its state, based on how we defined the class". 
 
 ## Class Basics
-Before we continue with the definition of encapsulation, it might be useful to see how we use the paradigm of Object Oriented Programming in or with a specific programming language.  Different programming langauges have different techniques to manage the 'bookkeeping' of objects. That is, what methods and procedures do we use to create objects and interact with them? 
+Before we continue with the definition of encapsulation, it might be useful to see how we use the paradigm of Object Oriented Programming in or with a specific programming language.  Different programming langauges have different techniques to manage the 'bookkeeping' of objects. That is, what methods and procedures do we use to create Class and Objects and interact with them? 
 
-Many languages use the notion of a 'class' to represent an Object. So many, that it is easy to simply use the terms Object and Class interchangeably. I'll be pedantic and try to keep the separation between the abstract notion of an Object, and the specific implementation of them; Classes. 
-
-The language python (which I'll be using for most of the examples) uses the following syntax to create a class (its implementation of an Object). To show the syntax off, lets use the example of the light switch, our simple 2 state object. 
+The language python (which I'll be using for most of the examples) uses the following syntax to create a Class (again, the definition of what an Object 'looks like' and what it can do). To show the syntax off, lets use the example of the light switch, our simple 2 state Class. 
 
 TODO:AddReferencesToPythonDocs
 
@@ -36,7 +34,7 @@ I'm going to gloss over a bunch of details, and instead jump to an example of ho
 >>> switch = ls.LightSwitch()
 ```
 
-While the LightSwitch class is an abstract definition OF a light switch, we now have an actual INSTANCE of the LightSwitch class. We can refer to switch as an "object" who is of the class (in typed languages it might even make sense to say 'type') LightSwitch. We refer to this process as 'instantiating a class'. We are making a specific, discrete, usable INSTANCE of the object we defined. 
+While the LightSwitch class is an abstract definition OF a light switch, we now have an actual INSTANCE of the LightSwitch class. We can refer to switch as an "object" who is of the class (in typed languages it might even make sense to say 'type') LightSwitch. We refer to this process as 'instantiating a object'. We are making a specific, discrete, usable INSTANCE of the object we defined. 
 
 Now that we have an instance of the object, we can interact with it! The class definition says that we have two METHODS avaialable to us; toggle and sayState. To use them, we interact with our instance of the object like so;
 
