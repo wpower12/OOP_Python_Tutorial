@@ -18,11 +18,35 @@ The main concepts I'll be focusing on will be;
 This tutorial will attmept to work through these topics, presenting discussion and exercises along the way. 
 
 ## Structure
-The top level directory contains markdown files with discussion content. Any exercises mentioned will have template files and problem descriptions within directories inside the exercies folder. Answers to said exercises are also provided in the solutions directory. 
+The idea behind this repository is that you can read the markdown files as tutorials, while interacting with example code in a terminal at the same time. When examples are shown, they'll typically be of either actual python code, expressions written into a REPL, or commands written into a shell (your terminal). 
 
-I'll be writing these discussion documents assuming you have a terminal open to the directory, and can navigate to the relvant directores for each topic. Some discussions will reference example code that can be imported into the python REPL so you can 'play along' with the code examples. To make imports easier, start your REPL in the same scope as a the example code. I'll write the example code assuming thats where you started. 
+### REPLs
+For those who maybe haven't seen this term yet, a Read-Eval-Print-Loop program is a special program, similar to a shell, that reads in lines of expressions, and evaluates them. It then prints the result of this expression, and the sits looping, waiting for the next expression.
 
-I'll be using python3 for this. Sorry Nick. 
+This pattern is pretty common, so it gets the short hand name. Many langauges ship with a REPL in which you can write statements in that language into the REPL program, and see how it would be interpreted by that language. 
+
+Python is one such language. You can invoke the 'Python REPL' in a shell by simply typing 'python'. You should see your prompt spit out some nice notices about what version python you're using, and then change your prompt to a: 
+
+```shell
+>>>
+```
+
+### Helpful Patterns
+When I drop into a REPL during a specific tutorial, I'll write a line at the top that says which directory (relative to the top level directory of the project) I am in when I started that REPL session. For example, if you're reading the 01 tutorial, and see a block like:
+
+```shell
+# examples/01_encapuslation/
+>>> print("hello from inside 'examples/01_encapuslation!'")
+```
+You'll know where you need to cd to in order to be in the same place when you start the REPL. 
+
+When there's an example of an interaction just in the shell, I'll append the relative directory in front of the terminal prompt as a reminder of where you should be to run the same code. 
+
+```shell
+../examples/01_encapsulation$ echo "Hi!"
+``` 
+
+
 
 ## Next
 [Encapsulation](01_encapsulation.md)
