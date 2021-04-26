@@ -6,7 +6,7 @@ For now we'll stay simple, and deal with ones that provide us classes that we ca
 # synthesizer
 [Synthesizer](https://pypi.org/project/synthesizer/) is a simple python library for creating noises. That link should provide enough information to get the dependencies and library installed. But the crib notes are;
 
-```bash
+```shell
 $ sudo apt install portaudio19-dev
 $ pip3 install pyaudio
 $ pip3 install synthesizer
@@ -16,13 +16,13 @@ You may need to use 'pip' vs 'pip3'.
 ## Basics
 Once we have the library installed, we can start a REPL to interact with it. 
 
-```bash
+```shell
 >>> from synthesizer import Player, Synthesizer, Waveform
 ```
 
 In our first line, we see that we're importing three specific class files from the synthesizer library. We'll see how we use these imports to create instances of the Classes they represent. This code is ripped directly from the examples provided in the synthesizer frameworks documentation, [here]()
 
-```bash
+```shell
 >>> player = Player()
 >>> player.open_stream()
 >>> synthesizer = Synthesizer(osc1_waveform=Waveform.sine, osc1_volume=1.0, use_osc2=False)

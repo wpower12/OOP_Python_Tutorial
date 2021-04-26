@@ -7,7 +7,7 @@ The Library TKinter provides tools to help a programmer Graphical User Interface
 TODO - how to install Tkinter
 For Ubuntu:
 
-```bash
+```shell
 $ sudo apt-get install python3-tk
 ```
 
@@ -48,7 +48,7 @@ app.mainloop()
 ```
 
 To see this in action, we can navigater to the 04 examples directory and run;
-```bash
+```shell
 $ python3 basicgui.py
 ```
 
