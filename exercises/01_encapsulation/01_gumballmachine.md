@@ -22,3 +22,9 @@ Out of gumballs!!
 ```
 
 To get you started, there is a template file with the method names written out, and reminders of what each method should accomplish in the gumballmachine.py file. 
+
+## Suggested Python Skills
+
+* Booleans
+* Boolean Expressions
+* String Formatting
