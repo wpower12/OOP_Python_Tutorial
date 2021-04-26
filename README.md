@@ -38,15 +38,18 @@ When I drop into a REPL during a specific tutorial, I'll write a line at the top
 # examples/01_encapuslation/
 >>> print("hello from inside 'examples/01_encapuslation!'")
 ```
-You'll know where you need to cd to in order to be in the same place when you start the REPL. 
+You'll know where you need to cd to in order to be in the same place when you start the REPL. This is important because many exmaples will assume you are in this location wehn we import the example code files, or call a specific python script. 
+
+You're encouraged to tweak and tinker on all the provided example code to see what happens! Just know that when you make changes to the source code, you'll need to restart your REPL and reimport the changed files to see the updates you've made. 
 
 When there's an example of an interaction just in the shell, I'll append the relative directory in front of the terminal prompt as a reminder of where you should be to run the same code. 
 
 ```shell
 ../examples/01_encapsulation$ echo "Hi!"
-``` 
+```
 
-
+### Exercises
+Each tutorial file will have related exercises found in the exercises directory. When there are multiple exercises, they'll be ordered in some kind of increasing-difficulty order. Each will come with an empty file to get you started. These usually just contain method stubs with reminders of your goals. Each exercise has a corresponding solution file in the corresponding solution directory. 
 
 ## Next
 [Encapsulation](01_encapsulation.md)
