@@ -49,7 +49,7 @@ app.mainloop()
 
 To see this in action, we can navigater to the 04 examples directory and run;
 ```shell
-$ python3 basicgui.py
+../examples/04_more_oop_in_the_wild$ python3 basicgui.py
 ```
 
 If everything is installed and we python points the a python3 binary, then you should see a tkinter application windo appear, with a 'hello world' Button, and a 'quit' Button. 

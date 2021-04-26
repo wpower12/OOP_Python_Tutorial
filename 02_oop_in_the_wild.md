@@ -7,9 +7,9 @@ For now we'll stay simple, and deal with ones that provide us classes that we ca
 [Synthesizer](https://pypi.org/project/synthesizer/) is a simple python library for creating noises. That link should provide enough information to get the dependencies and library installed. But the crib notes are;
 
 ```shell
-$ sudo apt install portaudio19-dev
-$ pip3 install pyaudio
-$ pip3 install synthesizer
+../examples/02_oop_in_the_wild$ sudo apt install portaudio19-dev
+../examples/02_oop_in_the_wild$ pip3 install pyaudio
+../examples/02_oop_in_the_wild$ pip3 install synthesizer
 ```
 You may need to use 'pip' vs 'pip3'.
 
@@ -17,6 +17,7 @@ You may need to use 'pip' vs 'pip3'.
 Once we have the library installed, we can start a REPL to interact with it. 
 
 ```shell
+# examples/02_oop_in_the_wild
 >>> from synthesizer import Player, Synthesizer, Waveform
 ```
 

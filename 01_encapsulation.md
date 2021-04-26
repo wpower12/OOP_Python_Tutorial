@@ -30,6 +30,7 @@ class LightSwitch:
 I'm going to gloss over a bunch of details, and instead jump to an example of how we go on to use this class definition to actually CREATE an object. If we start a REPL in our example directory, we can IMPORT the file containing our class to try and use it. 
 
 ```shell
+# examples/01_encapsulation/
 >>> import lightswitch as ls
 >>> switch = ls.LightSwitch()
 ```
@@ -94,6 +95,7 @@ This keyword is very important in the constructor definition. This is how we 'sa
 We can see our methods and constructor in action in the REPL:
 
 ```shell
+# examples/01_encapsulation/
 >>> import character as c 
 >>> bob = c.Character("Bob", "Mage", 20)
 >>> bob.whoAreYou()
