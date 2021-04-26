@@ -102,6 +102,19 @@ I am Bob, a Mage
 I\'m dead!
 ```
 
+## Approaching a Definition
+Now we can talk about the actual concept of encapsulation. In both of our examples, the lightswitch and the character, the state of the class is only modified through its methods (remember, the constructor is just a special type of method). This is the initial, simplified definition of encapsulation I'd like to give you; 'We _encapsulate_ the fields of a Class by making them accesible and modifiable through methods.'
+
+In some langagues, this goal is made more explicit in the syntax. For instance, in the Java language, the fields of a class are given '_access modifiers_' that prevent can restrict access to them. This helps ensure that a class is designed in a way that encourages 'true' encapsulation according to this principle. 
+
+Python does not have explicit access control, and instead, when using OOP within python, we consider encapsulation a goal that we achieve by design choices and proper documentation. There are also tools that can help in this, such as annotation systems, that approximate some of the 'first class OOP' features of other langauges but these are out of scope for an introduction. 
+
+For now, consider encapsulation one of the goals of OOP. We would like to create objects whose methods and fields are written such that the state is managed through a (hopefully) obvious sequence of calls to the class methods. 
+
+We see this in the lightswitch class and our example usage. We don't directly modify the 'am_i_on' variable ever. We interact with that state through the 'language' we have defined for our class. We change the state of that variable by calling 'toggle'.  We see this again in the Character class; to deal damage to a character, we do not directly modify the 'curr_hp' field, we use the 'hurt' method to deal damage.
+
+These are toy examples, but you can hopefully see how this notion becomes more important as the classes become more complex. 
+
 ## Review
 These examples should provide a concrete illustration of how we use object oriented programming to Encapsulate the abstraction of an Object into a class. This framework allows us to create working, manageable programming constructs that can represent a incredibly wide variety of things. 
 
