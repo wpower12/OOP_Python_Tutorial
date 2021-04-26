@@ -113,6 +113,8 @@ For now, consider encapsulation one of the goals of OOP. We would like to create
 
 We see this in the lightswitch class and our example usage. We don't directly modify the 'am_i_on' variable ever. We interact with that state through the 'language' we have defined for our class. We change the state of that variable by calling 'toggle'.  We see this again in the Character class; to deal damage to a character, we do not directly modify the 'curr_hp' field, we use the 'hurt' method to deal damage.
 
+The idea that we want to 'protect' our internal state from the user is sometimes given the name '_data hiding_'. The fields of our class, (and in a sense, the implementation of our methods) are _hidden_ from the user. All the user sees is a set of _verbs_ (our methods) that let us modify interact with the Object, which will internally manage its own state. 
+
 These are toy examples, but you can hopefully see how this notion becomes more important as the classes become more complex. 
 
 ## Review
@@ -123,3 +125,7 @@ Many frameworks that you will use to interact with complex systems will be cast 
 As an initial exercise, consider some more methods you could add onto the Character class. Perhaps some that have different outputs based on the class of the character. 
 
 Additionally, there are more concrete exercises provided in the  '/exercises/01_encapsulation' directory. 
+
+## References
+TODO - Make a zotero collection for these. 
+TODO - Add these. 

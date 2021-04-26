@@ -35,7 +35,7 @@ If you run the above, you might see a bunch of log output telling you a bunch of
 Now I don't know much about music, but now I know that if I can find a set of those strings representing notes that I like, I can package them up like that, and have this code play it for me.  Neat. 
 
 ## Data Hiding
-One thing I'd like to point out about this example is that it highlights one of the more nuanced aspects or goals of encapsulation; Data Hiding. Creating a Class should be an exercise in protecting the user from shooting themselves in the foot, by ensuring that the only way to mess with the state of an object of a particular class, is through the methods you define on it. 
+One thing I'd like to point out about this example is that it highlights one of the more nuanced aspects or goals of encapsulation; data hiding. As we mentioned at the end of _01_, creating a Class should be an exercise in protecting the user from shooting themselves in the foot, by ensuring that the only way to mess with the state of an object of a particular class, is through the methods you define on it. 
 
 We have a very complex notion of a 'Music Player', all encapsulated by the class Player. As the user of the Class, I don't need to know about the particulars of interacting with the hardware on my machine that makes noise. This class does all that behind the scenes, and presents me, the user, with a small set of methods that let me interact with that complex code base. 
 
