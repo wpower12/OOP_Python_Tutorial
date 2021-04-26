@@ -107,13 +107,13 @@ Now we can talk about the actual concept of encapsulation. In both of our exampl
 
 In some langagues, this goal is made more explicit in the syntax. For instance, in the Java language, the fields of a class are given '_access modifiers_' that prevent can restrict access to them. This helps ensure that a class is designed in a way that encourages 'true' encapsulation according to this principle. 
 
-Python does not have explicit access control, and instead, when using OOP within python, we consider encapsulation a goal that we achieve by design choices and proper documentation. There are also tools that can help in this, such as annotation systems, that approximate some of the 'first class OOP' features of other langauges but these are out of scope for an introduction. 
+Python does not have explicit access control. When using OOP within python, we consider encapsulation a goal that we achieve by design choices and proper documentation. There are also tools that can help in this, such as annotation systems, that approximate some of the 'first class OOP' features of other langauges but these are out of scope for an introduction. 
 
 For now, consider encapsulation one of the goals of OOP. We would like to create objects whose methods and fields are written such that the state is managed through a (hopefully) obvious sequence of calls to the class methods. 
 
 We see this in the lightswitch class and our example usage. We don't directly modify the 'am_i_on' variable ever. We interact with that state through the 'language' we have defined for our class. We change the state of that variable by calling 'toggle'.  We see this again in the Character class; to deal damage to a character, we do not directly modify the 'curr_hp' field, we use the 'hurt' method to deal damage.
 
-The idea that we want to 'protect' our internal state from the user is sometimes given the name '_data hiding_'. The fields of our class, (and in a sense, the implementation of our methods) are _hidden_ from the user. All the user sees is a set of _verbs_ (our methods) that let us modify interact with the Object, which will internally manage its own state. 
+The idea that we want to 'protect' our internal state from the user is sometimes given the name '_data hiding_'. The fields of our class, (and in a sense, the implementation of our methods) are _hidden_ from the user. All the user sees is a set of _verbs_ (our methods) that let us modify or interact with the Object, which will internally manage its own state. 
 
 These are toy examples, but you can hopefully see how this notion becomes more important as the classes become more complex. 
 

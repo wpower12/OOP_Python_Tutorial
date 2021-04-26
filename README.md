@@ -24,5 +24,5 @@ I'll be writing these discussion documents assuming you have a terminal open to 
 
 I'll be using python3 for this. Sorry Nick. 
 
-## Next!
-01_Encapsulation.md
+## Next
+[Encapsulation](01_Encapsulation.md)
