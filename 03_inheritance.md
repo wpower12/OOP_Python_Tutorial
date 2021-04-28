@@ -128,3 +128,8 @@ So in the example of the Character class, when we look at a variety of Character
 TODO - Example: Iterate over a collection of Characters and have them do a character thing.
 
 TODO - Example: Iterate over a collection of Characters and try to do a Brawler-specific thing and see the error that occurs when a not-Brawler tries to do it.
+
+## Polymorphism and Frameworks
+Polymorphism is a critical concept because it is a common method for interacting with complex frameworks. Many times 'using' a framework for a task like creating a GUI involves the creation of a class that inherits from a base class that provides a list of all the 'required' methods that a programmer must fill in to properly make w.o thing the Framework exists to help with. There are more nuanced ways to discuss this, and a variety of ways to enable it in a program language, but for the sake of teaching you enough OOP to use complex frameworks, this defintion will suffice.
+
+To see this in action, the 04 tutorial includes examples of using class inheritance to interact with a complex framework.
