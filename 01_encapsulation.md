@@ -76,14 +76,18 @@ class Character:
         self.player_name  = p_name
         self.player_class = p_class 
         self.max_hp       = max_health
-        self.current_hp   = max_health
+        self.curr_hp   = max_health
 
     def whoAreYou(self):
         print("I am {}, a {}".format(self.player_name, self.player_class))
 
     def hurt(self, dmg):
-        self.current_hp -= dmg
-        if self.current_hp <= 0:
+        # The following is shorthand for: self.curr_hp = self.curr_hp-1
+        # Note, were still accessing the variable 'through' self, and
+        # giving it a new value with the assignment operatoe '=', its
+        # just using some 'syntactic sugar' to write a clearner line.
+        self.curr_hp -= dmg
+        if self.curr_hp <= 0:
             print("I'm dead!")
 
 ```
