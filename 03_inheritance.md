@@ -50,9 +50,7 @@ An important thing to point out here is that we did NOT have to write a toggle m
 
 We can choose to 'reimplement' an existing method of a class we inherit from. This is known as '__method overwriting__'. We choose to make a 'more specific' version of our sayState method, one that we know will handle our additional state now that the LightSwitch class has had more state added to it by the DimmerSwitch class. 
 
-## Polymorphism
-The idea of inheritance gives OOP the flexibility of a 'kind-of' relationship. An additional benefit of this relationship is that it lets us encode an idea of 'when can I do what to what?' into our programs. In other words, a hierarchy of class definitions implies there are 'equivalant sets' of classes. We can decide to treat some part of the hierarcy as if they were all the most base class, to simplify writing some part of our code. 
-
+## RPG Characters
 Lets go back to our RPG characters. In an RPG there are lots of "Character" like things. Not just the player characters, but the characters you meet along the way, the NPCs, and the enemy characters. It might make sense to keep a base 'Character' class that does all the basic things all of these 'types' of character have in common, and then 'inherit' from that class to create other, specialized kinds of character. Note, there are lots of ways to decide on a class hierarchy, what follows is one posibility. Try others!
 
 Lets say our base character assumes that any 'entity' we want to 'model' with a Character class is going the: have health (hp), have a name, and an inventroy. All characters will have 'takeDamage', 'healDamage', 'giveItem' and 'checkInventory' methods.
@@ -115,3 +113,18 @@ class Brawler(Character):
 TODO - Explanation of super()
 
 TODO - Example interaction. 
+
+TODO - At least one more 'kind' of character.
+
+TODO - illustration of our 'RPG Class Hierarchy'
+
+## Polymorphism
+The idea of inheritance gives OOP the flexibility of a 'kind-of' relationship. An additional benefit of this relationship is that it lets us encode an idea of 'when can I do what to what?' into our programs. In other words, a hierarchy of class definitions implies there are 'equivalant sets' of classes. We can decide to treat some part of the hierarcy as if they were all the most base class, to simplify writing some part of our code. 
+
+In the above, we have multiple 'kinds-of' characters. We could, if we wanted, write code that considers any 'type' of Character-derived class the same. However, when we do write such code, we have to make sure that we 'respect the class hierarchy', and only use methods that we know would exist on the class, regardless how which 'subclass' we are looking at. 
+
+So in the example of the Character class, when we look at a variety of Character objects (perhaps we are iterating over a collection of Characters of different 'kinds') we can safely call any methods from the Character class, on objects of the various subclasses (Brawler, Mage, etc).
+
+TODO - Example: Iterate over a collection of Characters and have them do a character thing.
+
+TODO - Example: Iterate over a collection of Characters and try to do a Brawler-specific thing and see the error that occurs when a not-Brawler tries to do it.
