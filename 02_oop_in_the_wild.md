@@ -33,6 +33,12 @@ In our first line, we see that we're importing three specific class files from t
 
 If you run the above, you might see a bunch of log output telling you a bunch of information about ASLA lib or other weird stuff. Ignore it. You SHOULD hear a chord being played. 
 
+We see classes being created twice. On the first line, we see a Player class being instantiated and a reference stored to it in 'player'. On the third line, we create an instance of a Synthesizer.
+
+Our third class file (Waveform) isn't used to create an instance of a class, but is instead being used as a convient way to access methods that are being organized in some helpful way. Waveform is a class, but it is providing access to what we could call 'static methods of that class'. This shows us that a class file can contain more than just the definition of a class. Many times, a class file also contains other methods that are useful in the contexts in which the class is typically used. These are not methods that are defined 'on' or 'within' the class definition itself, but rather ones defined outside of it that are very related to the class's function, but ones that do not make sense to attach to an 'instance' of that class.
+
+In the line in which we create the Synthesizer object, we see that one of the possible named parameters takes a 'Waveform' 'function'. According to the documentation, this is a function that maps a time step to an output intensity, otherwise known as a 'waveform'. The Waveform class contains many 'static methods' that behave like waveforms! One such function is the 'sine wave', which we access 'through' the class file as seen in the example. 
+
 Now I don't know much about music, but now I know that if I can find a set of those strings representing notes that I like, I can package them up like that, and have this code play it for me.  Neat. 
 
 ## Data Hiding
