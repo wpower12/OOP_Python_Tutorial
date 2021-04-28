@@ -41,6 +41,8 @@ In the line in which we create the Synthesizer object, we see that one of the po
 
 Now I don't know much about music, but now I know that if I can find a set of those strings representing notes that I like, I can package them up like that, and have this code play it for me.  Neat. 
 
+TODO - Add refernces to the doc for Waveform, and the Syhtesizer constructor.
+
 ## Data Hiding
 One thing I'd like to point out about this example is that it highlights one of the more nuanced aspects or goals of encapsulation; data hiding. As we mentioned at the end of _01_, creating a Class should be an exercise in protecting the user from shooting themselves in the foot, by ensuring that the only way to mess with the state of an object of a particular class, is through the methods you define on it. 
 
